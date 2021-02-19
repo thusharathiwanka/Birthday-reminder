@@ -1,6 +1,6 @@
 import { FaTimes } from "react-icons/fa";
 
-function Card({ image, name, age, id }) {
+function Card({ image, name, age, id, clearBirthday }) {
   return (
     <div className="card-container" key={id}>
       <img src={image} alt={name} />
@@ -8,7 +8,11 @@ function Card({ image, name, age, id }) {
         <h4>{name}</h4>
         <p>{age}</p>
       </div>
-      <button>
+      <button
+        onClick={() => {
+          clearBirthday(id);
+        }}
+      >
         <FaTimes />
       </button>
     </div>

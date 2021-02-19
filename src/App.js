@@ -11,6 +11,10 @@ function App() {
     console.log("cleared");
   };
 
+  const clearBirthday = (key) => {
+    setPeople(people.filter((person) => key !== person.id));
+  };
+
   return (
     <main>
       <section>
@@ -21,7 +25,8 @@ function App() {
               image={person.image}
               name={person.name}
               age={person.age}
-              key={person.id}
+              id={person.id}
+              clearBirthday={clearBirthday}
             />
           );
         })}
