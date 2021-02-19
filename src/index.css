@@ -33,11 +33,12 @@ img {
 
 main {
   background: #a8dadc;
+  min-height: 100vh;
+  width: 100%;
 }
 
 section {
   min-height: 100vh;
-  width: 1440px;
   margin: 0 auto;
   color: white;
   display: flex;
@@ -53,7 +54,7 @@ section {
   background: #f1faee;
   align-items: center;
   padding: 2rem;
-  margin-bottom: 1rem;
+  margin: 0 2rem 1rem 2rem;
   border-radius: 5px;
   color: #1d3557;
   transition: box-shadow 0.3s ease-in-out;
@@ -79,6 +80,9 @@ button {
   color: #f1faee;
   cursor: pointer;
   background: #457b9d;
+}
+
+.clear {
   margin-top: 1rem;
 }
 
@@ -91,4 +95,31 @@ button {
   padding: 0.3rem;
   border-radius: 50%;
   font-size: 1rem;
+}
+
+@media screen and (max-width: 535px) {
+  .card-container {
+    width: 70%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  h2 {
+    margin-top: 2rem;
+  }
+
+  .clear {
+    margin-bottom: 2rem;
+  }
+
+  .card-container {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    justify-content: space-around;
+  }
+
+  .card-container .card-info {
+    padding: 1rem;
+  }
 }
