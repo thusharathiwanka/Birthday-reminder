@@ -1,13 +1,86 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap");
+
+html {
+  font-size: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Work sans", sans-serif;
+}
+
+h2 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+main {
+  background: #a8dadc;
+}
+
+section {
+  min-height: 100vh;
+  width: 1440px;
+  margin: 0 auto;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  height: 12vh;
+  width: 30rem;
+  display: flex;
+  background: #f1faee;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  border-radius: 5px;
+  color: #1d3557;
+}
+
+.card-info {
+  padding-left: 1.5rem;
+  width: 80%;
+}
+
+.clear,
+button {
+  outline: none;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 5px;
+  font-weight: 600;
+  color: #f1faee;
+  cursor: pointer;
+  background: #457b9d;
+}
+
+.card-container button {
+  justify-self: flex-end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #e63946;
+  padding: 0.3rem;
+  border-radius: 50%;
+  font-size: 1rem;
 }
