@@ -17,6 +17,7 @@ h2 {
   text-align: center;
   padding-bottom: 2rem;
   font-size: 2rem;
+  text-transform: capitalize;
 }
 
 h4 {
@@ -55,6 +56,12 @@ section {
   margin-bottom: 1rem;
   border-radius: 5px;
   color: #1d3557;
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+.card-container:hover,
+.card-container:focus {
+  box-shadow: 2px 2px 30px rgba(69, 123, 157, 0.4);
 }
 
 .card-info {
@@ -72,6 +79,7 @@ button {
   color: #f1faee;
   cursor: pointer;
   background: #457b9d;
+  margin-top: 1rem;
 }
 
 .card-container button {
